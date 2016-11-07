@@ -21,7 +21,7 @@ namespace summitive_make_story
             outputLabel.Text = "Its the end of the day and you start to walk home from school. Do you walk home with your friends, your crush or alone?";
             mLabel.Text = "Alone";
             bLabel.Text = "Friends";
-            spaceLabel.Text = "Crush";
+            spaceLabel.Text = "Crush"; 
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
