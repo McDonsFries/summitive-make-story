@@ -83,6 +83,9 @@
   <ItemGroup>
     <None Include="Resources\sidewalk.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Walking-SoundBible.com-895042969.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
