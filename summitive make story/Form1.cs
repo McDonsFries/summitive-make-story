@@ -27,7 +27,7 @@ namespace summitive_make_story
             InitializeComponent();
             //display initial message and options
 
-            SoundPlayer player = new SoundPlayer(Properties.Resources.walkin);
+            SoundPlayer player = new SoundPlayer(Properties.Resources.walkin); 
             player.Play();
             outputLabel.Text = "Its the end of the day and you start to walk home from school. Do you walk home with your friends, your crush or alone?";
             mLabel.Text = "Alone";
