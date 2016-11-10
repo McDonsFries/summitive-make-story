@@ -40,7 +40,7 @@
             // outputLabel
             // 
             this.outputLabel.BackColor = System.Drawing.Color.Transparent;
-            this.outputLabel.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.outputLabel.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.outputLabel.ForeColor = System.Drawing.Color.White;
             this.outputLabel.Location = new System.Drawing.Point(227, 9);
             this.outputLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);

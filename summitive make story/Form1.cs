@@ -51,19 +51,20 @@ namespace summitive_make_story
                 {
                     scene = 6;
                 }
+                else if (scene == 5)
+                {
+                    scene = 2;
+                }
                 else if (scene == 3)
                 {
                     scene = 13;
                 }
                 else if (scene == 13)
                 {
-                    rand = randgen.Next(1,5);
-                    scene = 15;
-                }
-                else if (scene == 13)
-                {
+                   // rand = randgen.Next(1,5);
                     scene = 17;
                 }
+
                 else if (scene == 2)
                 {
                     scene = 8;
@@ -80,9 +81,29 @@ namespace summitive_make_story
                 {
                     scene = 16;
                 }
+                else if (scene == 16)
+                {
+                    scene = 17;
+                }
                 else if (scene == 17)
                 {
                     this.Close();
+                }
+                else if (scene == 13)
+                {
+                    scene = 18;
+                }
+                else if (scene == 18)
+                {
+                    scene = 15;
+                }
+                else if (scene == 7)
+                {
+                    scene = 17;
+                }
+                else if (scene == 10)
+                {
+                    scene = 11;
                 }
             }
             else if (e.KeyCode == Keys.B)  
@@ -111,10 +132,6 @@ namespace summitive_make_story
                 {
                     scene = 7;
                 }
-                else if (scene == 7)
-                {
-                    scene = 17;
-                }
                 else if (scene == 8)
                 {
                     scene = 11;
@@ -126,6 +143,10 @@ namespace summitive_make_story
                 else if (scene == 12)
                 {
                     scene = 17;
+                }
+                else if (scene == 13)
+                {
+                    scene = 15; 
                 }
                 else if (scene == 17)
                 {
@@ -260,6 +281,11 @@ namespace summitive_make_story
                     {
                         outputLabel.Text = "Your friend buys you something instead";
                     }
+
+                    mLabel.Text = "Continue";
+                    bLabel.Text = "";
+                    spaceLabel.Text = "";
+
                     break;
                 case 16:
                     outputLabel.Text = "After buying your treat you then walk home with your friends.";
@@ -269,12 +295,15 @@ namespace summitive_make_story
                     break;
                 case 17:
                     outputLabel.Text = "The end. Would you like to play again?";
-                    mLabel.Text = "Yes";
-                    bLabel.Text = "No";
+                    mLabel.Text = "No";
+                    bLabel.Text = "Yes";
                     spaceLabel.Text = "";
                     break;
-                default:
-                    outputLabel.Text = "Please press 'M', 'B', or the spacebar to proceed.";
+                case 18:
+                    outputLabel.Text = "Your friend offers to buy you something";
+                    mLabel.Text = "Continue";
+                    bLabel.Text = "";
+                    spaceLabel.Text = "";
                     break;
             }
         }
