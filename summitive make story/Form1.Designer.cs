@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Story));
             this.outputLabel = new System.Windows.Forms.Label();
             this.firstLabel = new System.Windows.Forms.Label();
             this.secondLabel = new System.Windows.Forms.Label();
@@ -52,10 +53,11 @@
             // 
             this.firstLabel.AutoSize = true;
             this.firstLabel.BackColor = System.Drawing.Color.Transparent;
-            this.firstLabel.Font = new System.Drawing.Font("Trajan Pro", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstLabel.Font = new System.Drawing.Font("Trajan Pro", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstLabel.ForeColor = System.Drawing.Color.White;
             this.firstLabel.Location = new System.Drawing.Point(12, 36);
             this.firstLabel.Name = "firstLabel";
-            this.firstLabel.Size = new System.Drawing.Size(70, 16);
+            this.firstLabel.Size = new System.Drawing.Size(71, 16);
             this.firstLabel.TabIndex = 4;
             this.firstLabel.Text = "Press \'M\'";
             // 
@@ -63,11 +65,11 @@
             // 
             this.secondLabel.AutoSize = true;
             this.secondLabel.BackColor = System.Drawing.Color.Transparent;
-            this.secondLabel.Font = new System.Drawing.Font("Trajan Pro", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.secondLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.secondLabel.Font = new System.Drawing.Font("Trajan Pro", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.secondLabel.ForeColor = System.Drawing.Color.White;
             this.secondLabel.Location = new System.Drawing.Point(12, 151);
             this.secondLabel.Name = "secondLabel";
-            this.secondLabel.Size = new System.Drawing.Size(65, 16);
+            this.secondLabel.Size = new System.Drawing.Size(66, 16);
             this.secondLabel.TabIndex = 5;
             this.secondLabel.Text = "Press \'B\'";
             // 
@@ -76,7 +78,7 @@
             this.thirdLabel.AutoSize = true;
             this.thirdLabel.BackColor = System.Drawing.Color.Transparent;
             this.thirdLabel.Font = new System.Drawing.Font("Trajan Pro", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.thirdLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.thirdLabel.ForeColor = System.Drawing.Color.White;
             this.thirdLabel.Location = new System.Drawing.Point(12, 273);
             this.thirdLabel.Name = "thirdLabel";
             this.thirdLabel.Size = new System.Drawing.Size(144, 16);
@@ -123,6 +125,7 @@
             this.Controls.Add(this.firstLabel);
             this.Controls.Add(this.outputLabel);
             this.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Story";
             this.Text = "Summitive Story";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);

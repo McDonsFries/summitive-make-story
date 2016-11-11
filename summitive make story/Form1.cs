@@ -62,12 +62,6 @@ namespace summitive_make_story
                 {
                     scene = 13;
                 }
-                else if (scene == 13)
-                {
-                   // rand = randgen.Next(1,5);
-                    scene = 17;
-                }
-
                 else if (scene == 2)
                 {
                     scene = 8;
@@ -107,6 +101,10 @@ namespace summitive_make_story
                 else if (scene == 10)
                 {
                     scene = 11;
+                }
+                else if (scene == 9)
+                {
+                    scene = 10;
                 }
             }
             else if (e.KeyCode == Keys.B)  
@@ -155,6 +153,10 @@ namespace summitive_make_story
                 {
                     scene = 0;
                 }
+                else if (scene == 9)
+                {
+                    scene = 10;
+                }
             }
             else if (e.KeyCode == Keys.Space)
             {
@@ -162,7 +164,6 @@ namespace summitive_make_story
                 {
                     scene = 2;
                 }
-
                 else if (scene == 9)
                 {
                     scene = 10;
